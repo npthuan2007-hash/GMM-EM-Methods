@@ -150,7 +150,7 @@
         </button>
 
         <span id="slide-counter" class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 px-2 min-w-[54px] text-center font-mono">
-          1 / 14
+          1 / 13
         </span>
 
         <button id="btn-next" onclick="nextSlide()" class="p-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white shadow-sm disabled:opacity-40 transition" title="Slide tiếp theo (→)">
@@ -161,7 +161,7 @@
 
     <!-- Progress Bar -->
     <div class="w-full h-1 bg-blue-100 dark:bg-slate-800">
-      <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-600 via-indigo-500 to-sky-400 transition-all duration-300" style="width: 7.14%;"></div>
+      <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-600 via-indigo-500 to-sky-400 transition-all duration-300" style="width: 7.69%;"></div>
     </div>
   </header>
 
@@ -169,7 +169,7 @@
   <div id="toc-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-50 hidden items-center justify-center p-4" onclick="if(event.target===this) toggleTOC()">
     <div class="bg-white dark:bg-slate-900 rounded-2xl border border-blue-100 dark:border-slate-800 shadow-2xl max-w-3xl w-full max-h-[82vh] flex flex-col overflow-hidden">
       <div class="px-6 py-4 bg-blue-50/70 dark:bg-slate-800/70 border-b border-blue-100 dark:border-slate-800 flex items-center justify-between">
-        <h2 class="text-base font-bold text-slate-800 dark:text-white">Mục lục nội dung bài thuyết trình (14 Slides)</h2>
+        <h2 class="text-base font-bold text-slate-800 dark:text-white">Mục lục nội dung bài thuyết trình (13 Slides)</h2>
         <button onclick="toggleTOC()" class="p-1.5 rounded-lg hover:bg-blue-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -181,7 +181,7 @@
   <!-- Main Slide Viewport -->
   <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col justify-center">
 
-    <!-- ==================== SLIDE 1: DATASET & PREPROCESSING (SLIDE MỞ ĐẦU CHUẨN MỰC) ==================== -->
+    <!-- ==================== SLIDE 1: DATASET & PREPROCESSING ==================== -->
     <section class="slide-container active flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="1. Tập Dữ Liệu EV Adoption & Tiền Xử Lý">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -246,12 +246,12 @@ def pca_transform(X, mu, W):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 1 / 14</span>
+        <span>Slide 1 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 2 ==================== -->
+    <!-- ==================== SLIDE 2: K-MEANS ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="2. Thuật toán K-Means: Lloyd's Algorithm & K-Means++">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -308,12 +308,12 @@ def kmeans_once(X, k, rng, max_iter=300, tol=1e-4):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 2 / 14</span>
+        <span>Slide 2 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 3 ==================== -->
+    <!-- ==================== SLIDE 3: ELBOW & SILHOUETTE ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="3. Thực nghiệm K-Means: Elbow Method & Silhouette vs K">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -372,12 +372,12 @@ print(f"Inertia: {km_inertia:.2f}")
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 3 / 14</span>
+        <span>Slide 3 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 4 ==================== -->
+    <!-- ==================== SLIDE 4: GMM-EM CHOLESKY ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="4. GMM-EM: Phân rã Cholesky & LogSumExp">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -424,12 +424,12 @@ def logsumexp(a, axis):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 4 / 14</span>
+        <span>Slide 4 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 5 ==================== -->
+    <!-- ==================== SLIDE 5: E & M STEPS ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="5. Bước E và Bước M trong GMM: Vectorized Updates">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -483,12 +483,12 @@ def m_step(X, R, reg=1e-6):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 5 / 14</span>
+        <span>Slide 5 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 6 ==================== -->
+    <!-- ==================== SLIDE 6: MATH LIMIT PROOF ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="6. Cầu nối Giải tích: K-Means là giới hạn của GMM khi epsilon -> 0">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -536,12 +536,12 @@ def m_step(X, R, reg=1e-6):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 6 / 14</span>
+        <span>Slide 6 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 7 ==================== -->
+    <!-- ==================== SLIDE 7: CERTAINTY ==================== -->
     <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="7. Hiện tượng 'Cứng hóa xác suất' (Certainty Analysis)">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
@@ -599,84 +599,16 @@ print(f"Points with certainty < 0.2: {p_low:.1%}")
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 7 / 14</span>
+        <span>Slide 7 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 8 ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="8. Mô hình đối chuẩn DBSCAN: Lựa chọn epsilon & Kết quả">
+    <!-- ==================== SLIDE 8: METRICS IMPLEMENTATION ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="8. Cài đặt các chỉ số đánh giá không giám sát">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 08</span> • <span>Mô hình đối chuẩn dựa trên mật độ</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">DBSCAN: K-Distance Graph &amp; Tách Lọc Điểm Nhiễu</h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 my-4 items-start">
-        <div class="lg:col-span-6 space-y-3.5">
-          <div class="math-box p-4 rounded-2xl">
-            <div class="text-xs font-bold text-blue-700 dark:text-sky-300 uppercase mb-1">Nguyên lý phân cụm mật độ:</div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              • <strong>Core point:</strong> Có ít nhất $\text{min\_samples}$ điểm trong bán kính $\varepsilon$.<br/>
-              • <strong>Border point:</strong> Nằm trong bán kính $\varepsilon$ của một Core point.<br/>
-              • <strong>Noise point:</strong> Điểm cô lập, được gán nhãn $-1$. Không cần biết trước số cụm $K$.
-            </p>
-          </div>
-
-          <div class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 text-xs space-y-2">
-            <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-1.5">
-              <span class="text-slate-500 dark:text-slate-400">Tham số tối ưu được chọn:</span>
-              <span class="font-mono font-bold text-blue-700 dark:text-sky-300">$\varepsilon = 2.0, \; \text{min\_samples} = 10$</span>
-            </div>
-            <div class="flex justify-between border-b border-slate-200 dark:border-slate-700 pb-1.5">
-              <span class="text-slate-500 dark:text-slate-400">Số cụm hình thành:</span>
-              <span class="font-mono font-bold text-indigo-700 dark:text-indigo-400">9 cụm</span>
-            </div>
-            <div class="flex justify-between">
-              <span class="text-slate-500 dark:text-slate-400">Điểm nhiễu phát hiện (Noise):</span>
-              <span class="font-mono font-bold text-rose-600 dark:text-rose-400">1.373 điểm (9.2%)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="lg:col-span-6 bg-slate-900 rounded-2xl p-4 border border-slate-800 text-slate-200">
-          <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-800">
-            <span class="text-xs font-mono font-semibold text-slate-400">dbscan.py</span>
-            <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 font-medium">Stack BFS Traversal</span>
-          </div>
-          <pre class="overflow-x-auto"><code class="language-python">def dbscan(X, eps, min_samples):
-    nbrs = radius_neighbors(X, eps)
-    core = np.array([len(nb) >= min_samples for nb in nbrs])
-    labels = np.full(len(X), -1)
-    cid = 0
-    for i in range(len(X)):
-        if labels[i] != -1 or not core[i]:
-            continue
-        labels[i] = cid
-        stack = [i]
-        while stack:
-            for j in nbrs[stack.pop()]:
-                if labels[j] == -1:
-                    labels[j] = cid
-                    if core[j]:
-                        stack.append(j)
-        cid += 1
-    return labels</code></pre>
-        </div>
-      </div>
-
-      <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 8 / 14</span>
-        <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
-      </div>
-    </section>
-
-    <!-- ==================== SLIDE 9 ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="9. Cài đặt các chỉ số đánh giá không giám sát">
-      <div>
-        <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 09</span> • <span>Phương pháp đo lường không giám sát</span>
+          <span>Slide 08</span> • <span>Phương pháp đo lường không giám sát</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Cài Đặt Hàm Silhouette, Davies-Bouldin và ARI</h2>
       </div>
@@ -726,20 +658,20 @@ def davies_bouldin(X, labels):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 9 / 14</span>
+        <span>Slide 8 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 10: BENCHMARK WITH INTEGRATED METHOD CARDS ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="10. Bảng đối chuẩn định lượng: K-means vs GMM-EM vs DBSCAN">
+    <!-- ==================== SLIDE 9: QUANTITATIVE BENCHMARK (K-MEANS VS GMM-EM) ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="9. Bảng đối chuẩn định lượng: K-means vs GMM-EM">
       <div>
         <div class="flex items-center justify-between flex-wrap gap-2">
           <div>
             <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-              <span>Slide 10</span> • <span>Đối chuẩn định lượng đa mô hình</span>
+              <span>Slide 09</span> • <span>Đối chuẩn định lượng đa mô hình</span>
             </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Kết Quả Đo Lường Thực Nghiệm: K-Means vs GMM-EM vs DBSCAN</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Kết Quả Đo Lường Thực Nghiệm: K-Means vs GMM-EM</h2>
           </div>
 
           <!-- Interactive Chart Tabs Switcher -->
@@ -768,7 +700,7 @@ def davies_bouldin(X, labels):
             <span class="font-mono text-slate-400">clustering_metrics.csv</span>
           </div>
 
-          <!-- Interactive Canvas Viewport -->
+          <!-- Interactive Canvas Viewport (Chỉ còn 2 cột: K-means vs GMM-EM) -->
           <div class="relative w-full h-52 my-2 bg-slate-50/50 dark:bg-slate-900/50 rounded-xl border border-slate-100 dark:border-slate-800 p-1 flex items-center justify-center">
             <canvas id="benchmark-chart" class="block w-full h-full"></canvas>
           </div>
@@ -797,74 +729,63 @@ def davies_bouldin(X, labels):
                   <td class="p-2">2.3136</td>
                   <td class="p-2">-0.0263</td>
                 </tr>
-                <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/40">
-                  <td class="p-2 font-bold text-emerald-600 dark:text-emerald-400">DBSCAN</td>
-                  <td class="p-2">0.0880</td>
-                  <td class="p-2">2.5208</td>
-                  <td class="p-2">-0.0316</td>
-                </tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <!-- Right: 3 Integrated Scorecards from old Slide 1 (Đặt đúng ngữ cảnh đối chuẩn) -->
-        <div class="lg:col-span-5 flex flex-col justify-between space-y-2.5">
+        <!-- Right: 2 Method Scorecards (Head-to-Head Đối Đầu Trực Diện) -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-3">
           <!-- K-means Scorecard -->
-          <div class="p-3.5 rounded-2xl bg-blue-50/60 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 flex flex-col justify-between">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-bold text-xs text-blue-700 dark:text-sky-300">K-Means (Lloyd)</span>
-              <span class="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200 font-mono">Gán cứng</span>
+          <div class="p-4 rounded-2xl bg-blue-50/60 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-bold text-sm text-blue-700 dark:text-sky-300">K-Means (Lloyd's Algorithm)</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200 font-mono">Gán cứng (Hard)</span>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Khoảng cách Euclid hình cầu, ranh giới Voronoi phân hoạch dứt khoát.</p>
             </div>
-            <p class="text-[11px] text-slate-600 dark:text-slate-400">Khoảng cách Euclid hình cầu, ranh giới Voronoi tuyến tính.</p>
-            <div class="mt-2 pt-1.5 border-t border-blue-100 dark:border-slate-700 text-[11px] font-mono flex justify-between">
-              <span>DB: <strong class="text-emerald-600 dark:text-emerald-400">2.2370</strong></span>
-              <span>Sil: <strong>0.1647</strong></span>
-              <span>Inertia: <strong>163.446</strong></span>
+            <div class="mt-3 pt-2 border-t border-blue-100 dark:border-slate-700 text-xs font-mono space-y-1">
+              <div class="flex justify-between"><span>Davies-Bouldin:</span><strong class="text-emerald-600 dark:text-emerald-400">2.2370 (Tốt nhất)</strong></div>
+              <div class="flex justify-between"><span>Silhouette:</span><strong>0.1647</strong></div>
+              <div class="flex justify-between"><span>Sai số nội cụm Inertia:</span><strong>163.446,01</strong></div>
             </div>
           </div>
 
           <!-- GMM-EM Scorecard -->
-          <div class="p-3.5 rounded-2xl bg-indigo-50/60 dark:bg-slate-800/60 border border-indigo-200 dark:border-slate-700 flex flex-col justify-between">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-bold text-xs text-indigo-700 dark:text-indigo-300">GMM-EM</span>
-              <span class="text-[10px] px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-200 font-mono">Gán mềm</span>
+          <div class="p-4 rounded-2xl bg-indigo-50/60 dark:bg-slate-800/60 border border-indigo-200 dark:border-slate-700 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <span class="font-bold text-sm text-indigo-700 dark:text-indigo-300">GMM-EM (Gaussian Mixture)</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-800 dark:text-indigo-200 font-mono">Gán mềm (Soft)</span>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">Xác suất Gauss đa chiều, ma trận hiệp phương sai đầy đủ $\boldsymbol{\Sigma}_k$ xoay tự do.</p>
             </div>
-            <p class="text-[11px] text-slate-600 dark:text-slate-400">Xác suất Gauss đa chiều, ma trận hiệp phương sai đầy đủ $\boldsymbol{\Sigma}_k$.</p>
-            <div class="mt-2 pt-1.5 border-t border-indigo-100 dark:border-slate-700 text-[11px] font-mono flex justify-between">
-              <span>Sil: <strong class="text-emerald-600 dark:text-emerald-400">0.1681</strong></span>
-              <span>DB: <strong>2.3136</strong></span>
-              <span>Hội tụ: <strong>5 bước</strong></span>
+            <div class="mt-3 pt-2 border-t border-indigo-100 dark:border-slate-700 text-xs font-mono space-y-1">
+              <div class="flex justify-between"><span>Silhouette:</span><strong class="text-emerald-600 dark:text-emerald-400">0.1681 (Tốt nhất)</strong></div>
+              <div class="flex justify-between"><span>Davies-Bouldin:</span><strong>2.3136</strong></div>
+              <div class="flex justify-between"><span>Hội tụ &amp; Log-likelihood:</span><strong>5 bước (LL: -110020)</strong></div>
             </div>
           </div>
 
-          <!-- DBSCAN Scorecard -->
-          <div class="p-3.5 rounded-2xl bg-emerald-50/60 dark:bg-slate-800/60 border border-emerald-200 dark:border-slate-700 flex flex-col justify-between">
-            <div class="flex justify-between items-center mb-1">
-              <span class="font-bold text-xs text-emerald-700 dark:text-emerald-300">DBSCAN</span>
-              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200 font-mono">Mật độ</span>
-            </div>
-            <p class="text-[11px] text-slate-600 dark:text-slate-400">Không cần số cụm $K$, tách lọc ngoại lai ($\varepsilon=2.0$, $\text{min}=10$).</p>
-            <div class="mt-2 pt-1.5 border-t border-emerald-100 dark:border-slate-700 text-[11px] font-mono flex justify-between">
-              <span>Sil: <strong>0.0880</strong></span>
-              <span>Số cụm: <strong>9 cụm</strong></span>
-              <span>Nhiễu: <strong>1.373 (9.2%)</strong></span>
-            </div>
+          <!-- Summary Insight Note -->
+          <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            💡 <strong>Nhận định thực nghiệm:</strong> GMM-EM nhỉnh hơn về Silhouette (bao phủ cụm siêu elip tốt hơn), trong khi K-means nhỉnh hơn về Davies-Bouldin (khoảng cách tâm Euclid). Cả 2 đều tiệm cận $0$ ở chỉ số ARI.
           </div>
         </div>
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 10 / 14</span>
+        <span>Slide 9 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 11 ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="11. Trực quan hóa PCA 2D & Nghịch lý ARI ~ 0">
+    <!-- ==================== SLIDE 10: 2D PCA & ARI ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="10. Trực quan hóa PCA 2D & Nghịch lý ARI ~ 0">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 11</span> • <span>Không gian PCA (PC1 vs PC2)</span>
+          <span>Slide 10</span> • <span>Không gian PCA (PC1 vs PC2)</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Giải Mã Nghịch Lý ARI $\approx 0$ Giữa Phân Cụm và Nhãn Giám Sát</h2>
       </div>
@@ -909,11 +830,11 @@ def davies_bouldin(X, labels):
             </div>
           </div>
 
-          <div class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs font-mono">
-            <span class="text-slate-500 dark:text-slate-400">Chỉ số ARI:</span>
-            <span class="text-blue-700 dark:text-sky-300 font-bold">K-means: -0.005</span>
-            <span class="text-rose-700 dark:text-rose-400 font-bold">GMM-EM: -0.026</span>
-            <span class="text-emerald-700 dark:text-emerald-400 font-bold">DBSCAN: -0.032</span>
+          <!-- Bottom Metric Summary: Chỉ so sánh trực diện K-means vs GMM-EM -->
+          <div class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-around text-xs font-mono">
+            <span class="text-slate-500 dark:text-slate-400">Chỉ số ARI vs Will_Buy_EV:</span>
+            <span class="text-blue-700 dark:text-sky-300 font-bold">K-means: -0.0054</span>
+            <span class="text-rose-700 dark:text-rose-400 font-bold">GMM-EM: -0.0263</span>
           </div>
         </div>
 
@@ -921,31 +842,31 @@ def davies_bouldin(X, labels):
           <h3 class="text-sm font-bold text-amber-900 dark:text-amber-400 flex items-center gap-2 mb-2">
             <span>⚠️ Bản Chất Khoa Học Của "ARI ~ 0"</span>
           </h3>
-          <div class="text-xs text-slate-700 dark:text-slate-300 space-y-2 leading-relaxed">
+          <div class="text-xs text-slate-700 dark:text-slate-300 space-y-2.5 leading-relaxed">
             <p>
-              • <strong>Phân cụm tự nhiên theo phương sai lớn nhất:</strong> Cả K-means và GMM tách dữ liệu chủ yếu theo trục hoành PC1.
+              • <strong>Phân cụm tự nhiên theo phương sai lớn nhất:</strong> Cả K-means và GMM tách dữ liệu chủ yếu theo trục hoành PC1 (trục giữ 30.6% phương sai tự nhiên).
             </p>
             <p>
               • <strong>Nhãn mục tiêu Will_Buy_EV phân bố xen kẽ:</strong> Khách hàng quyết định mua xe điện rải rác trong cả 2 cụm hình học chứ không tách rời thành một cụm độc lập.
             </p>
             <div class="p-3 bg-amber-50/80 dark:bg-amber-950/40 rounded-xl border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-300 font-medium">
-              "ARI xấp xỉ 0 chứng minh cấu trúc cụm tự nhiên của 13 đặc trưng không tương đương với bài toán phân loại có giám sát."
+              "ARI xấp xỉ 0 chứng minh cấu trúc cụm tự nhiên của 13 đặc trưng hoàn toàn độc lập với bài toán phân loại nhãn có giám sát."
             </div>
           </div>
         </div>
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 11 / 14</span>
+        <span>Slide 10 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 12 ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="12. Bảng đối chiếu Lý thuyết & Độ phức tạp tính toán">
+    <!-- ==================== SLIDE 11: THEORETICAL MATRIX (HEAD-TO-HEAD) ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="11. Bảng đối chiếu Lý thuyết & Độ phức tạp tính toán">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 12</span> • <span>Hệ thống hóa toàn diện</span>
+          <span>Slide 11</span> • <span>Hệ thống hóa toàn diện</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Đối Chiếu Toán Học, Tham Số &amp; Độ Phức Tạp</h2>
       </div>
@@ -954,64 +875,62 @@ def davies_bouldin(X, labels):
         <table class="w-full text-left text-xs sm:text-sm">
           <thead class="bg-blue-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border-b border-blue-100 dark:border-slate-800">
             <tr>
-              <th class="p-3 font-bold">Tiêu chí đối chiếu</th>
-              <th class="p-3 font-bold text-blue-700 dark:text-sky-400">K-Means</th>
-              <th class="p-3 font-bold text-indigo-700 dark:text-indigo-400">GMM-EM</th>
-              <th class="p-3 font-bold text-emerald-700 dark:text-emerald-400">DBSCAN</th>
+              <th class="p-3.5 font-bold">Tiêu chí đối chiếu</th>
+              <th class="p-3.5 font-bold text-blue-700 dark:text-sky-400">Thuật Toán K-Means</th>
+              <th class="p-3.5 font-bold text-indigo-700 dark:text-indigo-400">Mô Hình GMM-EM</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100 dark:divide-slate-700 text-slate-700 dark:text-slate-300">
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Mô hình toán học</td>
-              <td class="p-2.5">Hình học phân hoạch (Voronoi)</td>
-              <td class="p-2.5 text-indigo-700 dark:text-indigo-300 font-medium">Xác suất sinh (Generative Gaussian)</td>
-              <td class="p-2.5">Mật độ kết nối (Density-based)</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Loại phân cụm</td>
+              <td class="p-3">Gán cứng (Hard assignment: $r_{ik} \in \{0, 1\}$)</td>
+              <td class="p-3 text-indigo-700 dark:text-indigo-300 font-medium">Gán mềm (Soft assignment: $\gamma_{ik} \in [0, 1]$)</td>
             </tr>
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Cơ chế gán nhãn</td>
-              <td class="p-2.5">Cứng: $r_{ik} \in \{0, 1\}$</td>
-              <td class="p-2.5 text-indigo-700 dark:text-indigo-300 font-medium">Mềm: Xác suất hậu nghiệm $\gamma_{ik} \in [0, 1]$</td>
-              <td class="p-2.5">Cứng kèm lọc nhiễu (Noise $-1$)</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Hàm mục tiêu</td>
+              <td class="p-3">Tổng bình phương sai số nội cụm ($J$)</td>
+              <td class="p-3 text-indigo-700 dark:text-indigo-300 font-medium">Log-likelihood ($\ell(\boldsymbol{\theta})$)</td>
             </tr>
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Hình dạng cụm giả định</td>
-              <td class="p-2.5">Hình cầu đẳng hướng ($\boldsymbol{\Sigma} = \sigma^2 \mathbf{I}$)</td>
-              <td class="p-2.5 text-indigo-700 dark:text-indigo-300 font-medium">Siêu elipxoit xoay tùy ý ($\boldsymbol{\Sigma}_k$ full)</td>
-              <td class="p-2.5">Hình dạng tùy ý bất kỳ</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Mô hình xác suất</td>
+              <td class="p-3">Không (Dựa trên khoảng cách phân hoạch)</td>
+              <td class="p-3 text-indigo-700 dark:text-indigo-300 font-medium">Có (Mô hình xác suất sinh Gaussian)</td>
             </tr>
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Số tham số cần học ($K=2, D=13$)</td>
-              <td class="p-2.5 font-mono text-blue-700 dark:text-sky-300">26 tham số ($KD$)</td>
-              <td class="p-2.5 font-mono text-indigo-700 dark:text-indigo-300">209 tham số ($K(1+D+\frac{D(D+1)}{2})-1$)</td>
-              <td class="p-2.5 font-mono text-emerald-700 dark:text-emerald-400">0 tham số (Non-parametric)</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Hình dạng cụm giả định</td>
+              <td class="p-3">Hình cầu đẳng hướng ($\boldsymbol{\Sigma} = \sigma^2 \mathbf{I}$)</td>
+              <td class="p-3 text-indigo-700 dark:text-indigo-300 font-medium">Siêu elipxoit xoay tùy ý ($\boldsymbol{\Sigma}_k$ full)</td>
             </tr>
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Độ phức tạp mỗi vòng lặp</td>
-              <td class="p-2.5 font-mono text-emerald-600 dark:text-emerald-400 font-bold">$\mathcal{O}(NKD)$</td>
-              <td class="p-2.5 font-mono text-rose-600 dark:text-rose-400">$\mathcal{O}(NKD^2 + KD^3)$</td>
-              <td class="p-2.5 font-mono">$\mathcal{O}(N^2 D)$ (Ma trận cự ly)</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Số tham số cần học ($K=2, D=13$)</td>
+              <td class="p-3 font-mono text-blue-700 dark:text-sky-300 font-semibold">$KD = 26$ tham số</td>
+              <td class="p-3 font-mono text-indigo-700 dark:text-indigo-300 font-semibold">$K(1 + D + \frac{D(D+1)}{2}) - 1 = 209$ tham số</td>
             </tr>
             <tr>
-              <td class="p-2.5 font-semibold text-slate-900 dark:text-white">Đo lường độ bất định</td>
-              <td class="p-2.5 text-slate-400">Không hỗ trợ</td>
-              <td class="p-2.5 text-emerald-700 dark:text-emerald-400 font-medium">Hỗ trợ ($\text{Certainty} = 2|\gamma_{i0} - 0.5|$)</td>
-              <td class="p-2.5 text-slate-400">Không hỗ trợ</td>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Độ phức tạp mỗi vòng lặp</td>
+              <td class="p-3 font-mono text-emerald-600 dark:text-emerald-400 font-bold">$\mathcal{O}(NKD)$ (Tuyến tính)</td>
+              <td class="p-3 font-mono text-rose-600 dark:text-rose-400 font-bold">$\mathcal{O}(NKD^2 + KD^3)$ (Nghịch đảo ma trận)</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900 dark:text-white">Đo lường độ bất định</td>
+              <td class="p-3 text-slate-400">Không hỗ trợ</td>
+              <td class="p-3 text-emerald-700 dark:text-emerald-400 font-medium">Có ($\text{Certainty} = 2|\gamma_{i0} - 0.5|$)</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 12 / 14</span>
+        <span>Slide 11 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 13 ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="13. Chiến lược Lai Thực Chiến: K-Means Seeding cho GMM-EM">
+    <!-- ==================== SLIDE 12: HYBRID STRATEGY ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-8 min-h-[76vh]" data-title="12. Chiến lược Lai Thực Chiến: K-Means Seeding cho GMM-EM">
       <div>
         <div class="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 13</span> • <span>Phương Pháp Khởi Tạo</span>
+          <span>Slide 12</span> • <span>Phương Pháp Khởi Tạo</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Chiến Lược Lai Tối Ưu: Khởi Tạo GMM-EM Bằng K-Means</h2>
       </div>
@@ -1062,16 +981,16 @@ def davies_bouldin(X, labels):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 13 / 14</span>
+        <span>Slide 12 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 14: KHI NÀO DÙNG GMM, KHI NÀO DÙNG K-MEANS? ==================== -->
-    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-10 min-h-[76vh]" data-title="14. Khi Nào Dùng GMM, Khi Nào Dùng K-Means?">
+    <!-- ==================== SLIDE 13: KHI NÀO DÙNG GMM, KHI NÀO DÙNG K-MEANS? ==================== -->
+    <section class="slide-container flex-col justify-between glass-card rounded-3xl p-6 sm:p-10 min-h-[76vh]" data-title="13. Khi Nào Dùng GMM, Khi Nào Dùng K-Means?">
       <div>
         <div class="flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-sky-400 uppercase tracking-wider">
-          <span>Slide 14</span> • <span>Khuyến Nghị Lựa Chọn Thuật Toán</span>
+          <span>Slide 13</span> • <span>Khuyến Nghị Lựa Chọn Thuật Toán</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mt-1.5">
           Khi Nào Dùng GMM, Khi Nào Dùng K-Means?
@@ -1131,7 +1050,7 @@ def davies_bouldin(X, labels):
           </div>
         </div>
 
-        <!-- Card 3: Xử lý số chiều cao & Giải pháp lai (Đã rút gọn súc tích & chữ to) -->
+        <!-- Card 3: Xử lý số chiều cao & Giải pháp lai -->
         <div class="p-6 rounded-2xl bg-gradient-to-br from-blue-50/80 to-indigo-50/40 dark:from-slate-800 dark:to-slate-900 border border-blue-200 dark:border-slate-700 shadow-sm flex flex-col justify-between">
           <div>
             <div class="text-sm sm:text-base font-mono font-bold text-emerald-700 dark:text-emerald-400 uppercase mb-3.5">
@@ -1159,7 +1078,7 @@ def davies_bouldin(X, labels):
       </div>
 
       <div class="mt-auto pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-        <span>Slide 14 / 14 </span>
+        <span>Slide 13 / 13</span>
         <span class="font-medium">Trường Đại học Công nghệ thông tin - ĐHQG TPHCM</span>
       </div>
     </section>
@@ -1185,7 +1104,7 @@ def davies_bouldin(X, labels):
       document.documentElement.className = nextTheme;
       localStorage.setItem('theme', nextTheme);
 
-      if (currentSlide === 9) drawBenchmarkChart();
+      if (currentSlide === 8) drawBenchmarkChart();
     }
 
     const slides = Array.from(document.querySelectorAll('.slide-container'));
@@ -1225,8 +1144,8 @@ def davies_bouldin(X, labels):
         });
       }
 
-      // Slide 10 (index 9) contains the Benchmark Canvas Chart
-      if (currentSlide === 9) {
+      // Slide 9 (index 8) contains the Benchmark Canvas Chart
+      if (currentSlide === 8) {
         requestAnimationFrame(() => drawBenchmarkChart());
       }
     }
@@ -1290,7 +1209,7 @@ def davies_bouldin(X, labels):
       }
     });
 
-    // Multi-chart switcher for Slide 10
+    // Multi-chart switcher for Slide 9 (Chỉ còn 2 thanh: K-means vs GMM-EM)
     let activeMetric = 'sil';
 
     const metricsData = {
@@ -1298,35 +1217,32 @@ def davies_bouldin(X, labels):
         title: "Silhouette (higher = better)",
         yMin: 0.00,
         yMax: 0.18,
-        ticks: [0.00, 0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16],
+        ticks: [0.00, 0.03, 0.06, 0.09, 0.12, 0.15, 0.18],
         bars: [
           { name: "K-means", val: 0.1647, str: "0.165", color: "#3498db" },
-          { name: "GMM-EM", val: 0.1681, str: "0.168", color: "#e74c3c" },
-          { name: "DBSCAN", val: 0.0880, str: "0.088", color: "#2ecc71" }
+          { name: "GMM-EM", val: 0.1681, str: "0.168", color: "#e74c3c" }
         ],
         type: 'positive'
       },
       db: {
         title: "Davies-Bouldin (lower = better)",
         yMin: 0.0,
-        yMax: 2.7,
+        yMax: 2.6,
         ticks: [0.0, 0.5, 1.0, 1.5, 2.0, 2.5],
         bars: [
           { name: "K-means", val: 2.2370, str: "2.237", color: "#3498db" },
-          { name: "GMM-EM", val: 2.3136, str: "2.314", color: "#e74c3c" },
-          { name: "DBSCAN", val: 2.5208, str: "2.521", color: "#2ecc71" }
+          { name: "GMM-EM", val: 2.3136, str: "2.314", color: "#e74c3c" }
         ],
         type: 'positive'
       },
       ari: {
         title: "ARI vs ground truth (higher = better)",
-        yMin: -0.035,
+        yMin: -0.030,
         yMax: 0.000,
         ticks: [-0.030, -0.025, -0.020, -0.015, -0.010, -0.005, 0.000],
         bars: [
           { name: "K-means", val: -0.0054, str: "-0.005", color: "#3498db" },
-          { name: "GMM-EM", val: -0.0263, str: "-0.026", color: "#e74c3c" },
-          { name: "DBSCAN", val: -0.0316, str: "-0.032", color: "#2ecc71" }
+          { name: "GMM-EM", val: -0.0263, str: "-0.026", color: "#e74c3c" }
         ],
         type: 'negative'
       }
@@ -1384,8 +1300,8 @@ def davies_bouldin(X, labels):
     }
 
     function drawSingleMetricSubplot(ctx, metric, startX, startY, W, H, isDark, isExpanded = false) {
-      const padL = isExpanded ? 46 : 38;
-      const padR = isExpanded ? 24 : 12;
+      const padL = isExpanded ? 50 : 38;
+      const padR = isExpanded ? 26 : 14;
       const padT = isExpanded ? 32 : 28;
       const padB = isExpanded ? 30 : 26;
       const plotW = W - padL - padR;
@@ -1400,6 +1316,10 @@ def davies_bouldin(X, labels):
       ctx.lineWidth = 1;
       ctx.strokeRect(startX + padL, startY + padT, plotW, plotH);
 
+      const numBars = metric.bars.length;
+      const gap = plotW / numBars;
+      const barW = isExpanded ? 68 : Math.max(26, plotW / 4);
+
       if (metric.type === 'positive') {
         ctx.fillStyle = isDark ? '#94A3B8' : '#64748B';
         ctx.font = '9px "JetBrains Mono"';
@@ -1413,9 +1333,6 @@ def davies_bouldin(X, labels):
           ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)';
           ctx.stroke();
         });
-
-        const barW = isExpanded ? 56 : Math.max(16, plotW / 5);
-        const gap = plotW / 3;
 
         metric.bars.forEach((b, i) => {
           const bx = startX + padL + i * gap + (gap - barW) / 2;
@@ -1457,9 +1374,6 @@ def davies_bouldin(X, labels):
         ctx.lineTo(startX + padL + plotW, zeroY);
         ctx.stroke();
 
-        const barW = isExpanded ? 56 : Math.max(16, plotW / 5);
-        const gap = plotW / 3;
-
         metric.bars.forEach((b, i) => {
           const bx = startX + padL + i * gap + (gap - barW) / 2;
           const barHeight = (Math.abs(b.val) / Math.abs(metric.yMin)) * plotH;
@@ -1488,7 +1402,7 @@ def davies_bouldin(X, labels):
     });
 
     window.addEventListener('resize', () => {
-      if (currentSlide === 9) drawBenchmarkChart();
+      if (currentSlide === 8) drawBenchmarkChart();
     });
   </script>
 </body>
